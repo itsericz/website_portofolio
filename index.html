@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Eric Sutadana Meliala</title>
+    <!-- Menghubungkan ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Menghubungkan ke Font Awesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVBAR -->
+    <header>
+        <div class="logo">Portofolio<span>.ME</span></div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </header>
+
+    <!-- HALAMAN UTAMA -->
+    <section id="home">
+        <div class="hero-text">
+            <h1>Halo semua👋, Saya Eric Sutadana Meliala</h1>
+            <p>Seorang kreator multimedia yang berfokus pada videografi dan video editing. Saya memiliki passion dalam menghasilkan konten visual yang kreatif, khususnya video bergaya cinematic yang mampu menyampaikan cerita, emosi, dan pengalaman secara visual.
+</p>
+            <a href="#projects" class="btn">Lihat Proyek Saya</a>
+        </div>
+        <div class="hero-image">
+            <!-- Ganti src ini dengan foto profil Anda -->
+            <img src="assets/eric-portofolio.jpeg" alt="Foto Profil">
+        </div>
+    </section>
+
+    <!-- BAGIAN MULTIMEDIA (Video & Audio) -->
+    <section id="multimedia" class="reveal">
+        <h2 class="section-title">Galeri Proyek</h2>
+        <div class="media-container">
+            <div class="media-item">
+                <h3>Video Proyek</h3>
+                <video width="100%" controls>
+                    <source src="assets/video_project.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+            </div>
+            <div class="media-item">
+                <h3>Pesan Audio</h3>
+                <audio width="100%" controls>
+                    <source src="assets/voice-project.mp3" type="audio/mpeg">
+                    Browser Anda tidak mendukung tag audio.
+                </audio>
+                <p style="margin-top: 10px; color: #666;"><i>Klik play untuk mendengarkan suara dari saya.</i></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HALAMAN PROYEK -->
+    <section id="projects" class="reveal">
+        <h2 class="section-title" style="text-align:center; width:100%;">Proyek Terbaru</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="assets/proyek-1.png" alt="Proyek Website SIMKM" class="zoomable">
+                <div class="project-info">
+                    <h3>Website SIMKM</h3>
+                    <p>Membuat halaman HTML sederhana yang menampilkan gambar kegiatan masjid dalam layout grid responsif menggunakan CSS.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/proyek-2.jpeg" alt="Proyek Cinematic Game Roblox" class="zoomable">
+                <div class="project-info">
+                    <h3>Roblox Cinematic</h3>
+                    <p>Membuat cinematic Roblox yang memperlihatkan suasana Golden Hour menggunakan aplikasi video editing Capcut.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/proyek-3.jpeg" alt="Proyek Poster" class="zoomable">
+                <div class="project-info">
+                    <h3>Poster Anti Korupsi</h3>
+                    <p>Membuat poster layanan masyarakat tentang anti korupsi menggunakan aplikasi editing Canva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULIR KONTAK -->
+    <section id="contact" class="reveal">
+        <h2 class="section-title" style="text-align:center; width:100%;">Hubungi Saya</h2>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama anda" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email anda" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tulis pesan anda di sini..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <!-- FOOTER DENGAN IKON SOSIAL MEDIA -->
+    <footer>
+        <div class="social-icons">
+            <!-- Ganti tanda # dengan link profil Anda -->
+            <a href="https://www.instagram.com/ercstdna?igsh=MTRzb3Roem5jNHc2OA==" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@itserc?_r=1&_t=ZS-97fVxlVbxvp" target="_blank" class="icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://github.com/itsericz" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/6285760808264" target="_blank" class="icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://youtube.com/@itserc?si=IRtqUGCmkyBnSETQ" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; Dibuat oleh Eric Sutadana Meliala.</p>
+    </footer>
+
+    <!-- Menghubungkan ke file JavaScript -->
+     <!-- IMAGE LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+
+    <img id="lightbox-img" src="" alt="Preview">
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
